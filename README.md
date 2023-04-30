@@ -22,7 +22,7 @@
   </a>
 </div>
 
-<h3 align="center">midudev's React Tech Interveview</h3>
+<h3 align="center"> <a href="https://github.com/midudev"> @midudev</a>'s React Tech Interveview</h3>
 
   </p>
 </div>
@@ -37,14 +37,14 @@
 </p>
 
 <p align="left">
-    <a href="https://clone-wars.netlify.app/"> View Demo</a>
+    <a href="https://prueba-tecnica-reactts.netlify.app/"> View Demo</a>
 </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-- <img src="https://img.shields.io/badge/React-20232A?style=plastic&logo=react&logoColor=61DAF" alt=" Logo" width="70">
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

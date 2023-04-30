@@ -6,7 +6,7 @@ import { Giphy } from "./components/Giphy";
 const Container = styled.div`
   width: 70%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 2rem auto;
 `;
 
 const Flexer = styled.div`
@@ -17,13 +17,14 @@ const Flexer = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 950px) {
+  @media (min-width: 1200px) {
     flex-direction: row;
   }
 `;
 
 const AlignedDiv = styled.div`
   text-align: center;
+  width: 50%;
 `;
 const StyledButton = styled.button`
   padding: 6px 32px;
@@ -32,6 +33,8 @@ const StyledButton = styled.button`
   font-family: monospace;
   font-size: 0.8rem;
   background-color: transparent;
+  display: block;
+  margin: 0 auto;
 `;
 
 function App() {
@@ -47,11 +50,9 @@ function App() {
             {cats && <Giphy catFact={cats} page={page} />}
           </AlignedDiv>
         </Flexer>
-        <AlignedDiv>
-          <StyledButton onClick={() => setPage(prev => prev + 1)}>
-            Click
-          </StyledButton>
-        </AlignedDiv>
+        <StyledButton onClick={() => setPage(prev => prev + 1)}>
+          Click
+        </StyledButton>
       </Container>
     </>
   );
