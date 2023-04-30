@@ -1,4 +1,4 @@
-# prueba-tecnica-react
+# React Technical Interview Simulation
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
@@ -22,7 +22,7 @@
   </a>
 </div>
 
-<h3 align="center">Star Wars Clone</h3>
+<h3 align="center">midudev's React Tech Interveview</h3>
 
   </p>
 </div>
@@ -31,20 +31,20 @@
 
 ## About The Project
 
-  <p align="left">
-    This project is based on a tech interview for a large e-commerce company that is looking for devs in Barcelona. The main task: consuming data from an API, displaying it on a screen through a list, and implementing each item on the list in detail.
+<p align="left">
+    This project is based on a tech interview simulation as seen on this <a href="https://www.youtube.com/watch?v=Sko0-qSRRfU">video</a> 
+    on <a href="https://www.youtube.com/@midudev">midudev Youtube's channel.</a>
+</p>
 
-The website must display a list of Star Wars ships with detailed information about each one of them.
-
-In order to access the starships page the user must be authenticated through Firebase. <br /><br /><a href="https://clone-wars.netlify.app/">View Demo</a>
+<p align="left">
+    <a href="https://clone-wars.netlify.app/"> View Demo</a>
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
 - <img src="https://img.shields.io/badge/React-20232A?style=plastic&logo=react&logoColor=61DAF" alt=" Logo" width="70">
-- <img  src="https://img.shields.io/badge/Sass-CC6699?style=plastic&logo=sass&logoColor=white" alt="Logo" width="60" >
-- <img src="https://img.shields.io/badge/React_Router-CA4245?style=plastic&logo=react-router&logoColor=white" alt=" Logo" width="114"> <br/>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -55,7 +55,7 @@ In order to access the starships page the user must be authenticated through Fir
 1. Clone the repo
 
 ```sh
-   git clone https://github.com/ViuCoding/star-wars-clone.git
+   git clone https://github.com/ViuCoding/prueba-tecnica-react.git
 ```
 
 2.  Install NPM packages

@@ -22,7 +22,7 @@ const Flexer = styled.div`
   }
 `;
 
-const Fifty = styled.div`
+const AlignedDiv = styled.div`
   text-align: center;
 `;
 const StyledButton = styled.button`
@@ -42,14 +42,16 @@ function App() {
     <>
       <Container>
         <Flexer>
-          <Fifty>{cats}</Fifty>
-          <Fifty>{cats && <Giphy catFact={cats} page={page} />}</Fifty>
+          <AlignedDiv>{cats}</AlignedDiv>
+          <AlignedDiv>
+            {cats && <Giphy catFact={cats} page={page} />}
+          </AlignedDiv>
         </Flexer>
-        <Fifty>
+        <AlignedDiv>
           <StyledButton onClick={() => setPage(prev => prev + 1)}>
             Click
           </StyledButton>
-        </Fifty>
+        </AlignedDiv>
       </Container>
     </>
   );
