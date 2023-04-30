@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
-export default function useFetch(URL: string) {
+export default function useFetch(URL: string, page: number = 0) {
   const [isLoading, setIsLoading] = useState(false);
   const [cats, setCats] = useState(null);
   const [error, setError] = useState("I am error");
 
   useEffect(() => {
     fetchCat();
-  }, [URL]);
+  }, [URL, page]);
 
   async function fetchCat() {
     setIsLoading(true);
@@ -16,9 +16,18 @@ export default function useFetch(URL: string) {
       const data = await res.json();
 
       if (res.ok) {
-        setCats(data.fact);
+        if (URL.includes("giphy")) {
+          setCats(data.data[page].images.original.url);
+        } else {
+          setCats(data.fact);
+        }
+      } else {
+        throw new Error("FAILED TO FETCH");
       }
-    } catch (err) {}
+    } catch (err: any) {
+      console.log(err);
+      setError(err);
+    }
   }
 
   return { isLoading, cats, error };
